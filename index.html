@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovejoy Band</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------------------HOME----------------------------------------------------------->
+    <section class="base">
+        <!----------------------- Navbar ---------------------->
+        <header>
+            <a href="index.html"><img src="images/logo.png" class="logo"> </a>
+            <nav>
+                <div class="navbar" id="navLinks">
+                    <img src="images/silang.png" class="mobile-icon" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="music.html">MUSIC</a></li>
+                        <li><a href="store-official.html">STORE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                    </ul>
+                </div>
+                <img src="images/bars.png" class="mobile-icon" onclick="showMenu()">
+            </nav>
+            <div>
+                <a href="https://www.instagram.com/lovejoyonline/"><img src="images/icon-ig.png" class="icon"> </a>
+                <a href="https://twitter.com/lovejoy"><img src="images/twitter_PNG3.png" class="icon"> </a>
+            </div>
+        </header>
+
+        <!----------------------------------SLIDER----------------------------------------------------------->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="images/image1.png" class="img-slides">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="images/lovejoy1.jpg" class="img-slides">
+            </div>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+
+    <!---------------------------------------------TOUR DATES------------------------------------------------->
+    <section class="tourdates">
+        <h1>Tour Dates</h1>
+
+        <div class="row">
+            <div class="tourdates-col">
+                <a href="purchaseTicket.html">
+                    <h2>25 Aug 2023</h2>
+                </a>
+                <p>Leeds, United Kingdom <br> Leeds Festival 2023
+                </p>
+                <h5>Avaliable</h5>
+            </div>
+            <div class="tourdates-col">
+                <a href="purchaseTicket.html">
+                    <h2>27 Aug 2023</h2>
+                </a>
+                <p>Reading, United Kingdom <br> Reading Festival 2023
+                </p>
+                <h5>Avaliable</h5>
+            </div>
+            <div class="tourdates-col">
+                <a href="purchaseTicket.html">
+                    <h2>2 Sep 2023</h2>
+                </a>
+                <p>Co. Laois, Ireland <br> Electric Picnic 2023
+                </p>
+                <h5>Avaliable</h5>
+            </div>
+        </div>
+
+        <a href="news.html">
+            <h3>More Tour</h3>
+        </a>
+
+    </section>
+
+    <!----------------------------------------------------Store-------------------------------------------------->
+    <section class="store">
+        <h1>Official Store</h1>
+
+        <div class="row2">
+            <div class="store-col">
+                <img src="images/buy1.webp">
+                <div class="layer">
+                    <h4>Wake Up & It's Over (CD)</h4>
+                    <a href="purchaseMerch.html">
+                        <h3>BUY NOW</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="store-col">
+                <img src="images/buy2.webp">
+                <div class="layer">
+                    <h4>Wake Up & It's Over (Cassette)</h4>
+                    <a href="purchaseMerch.html">
+                        <h3>BUY NOW</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="store-btn">
+            <a href="store-official.html" class="btn">Shop The Official Store</a>
+        </div>
+    </section>
+
+    <!------------------------------------------------NEW SLETTER--------------------------------------------->
+    <section class="newsletter">
+        <h1>New Sletter</h1>
+        <h1>For the latest news on releases, tour, giveaways and more exclusive updates sign up to the Lovejoy
+            newsletter</h1>
+        <p>By giving us your email address, you’re happy for us to send you Lovejoy news. We won't spam you. Promise.
+        </p>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <input type="text" id="email" placeholder="Email Address" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!------------------------------------------LOVE JOY SOCIAL MEDIA------------------------------------------->
+    <section class="socialmedia">
+        <a href="index.html"><img src="images/logo.png" class="logo2"> </a>
+
+        <div class="barisan-icon">
+            <ul>
+                <li> <a href="https://lovejoy.ffm.to/discord"><img src="images/dc.png" class="icon2"> </a> </li>
+                <li> <a href="https://twitter.com/lovejoy"><img src="images/icon-twt.png" class="icon2"> </a> </li>
+                <li> <a href="https://www.instagram.com/lovejoyonline/"><img src="images/icon-ig.png" class="icon2">
+                    </a>
+                </li>
+                <li> <a href="https://open.spotify.com/artist/33tFkBLsl6f8TjKkV0uF0C?si=LrKRa-pBSpGPnTqbcrzZTg"><img
+                            src="images/icon-spotify.png" class="icon2"> </a> </li>
+                <li> <a href="https://www.youtube.com/@Lovejoyonline"><img src="images/icon-yt.png" class="icon2"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <h5>© Lovejoy 2023 </h5>
+
+    </section>
+
+    <!---------------------------------------- JavaScvript untuk Menu ------------------------------------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "ahmadhayyun553@gmail.com",
+                Password: "F4327912FBED636EE60D8E38443032D55F03",
+                To: 'ahmadhayyunaji12@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

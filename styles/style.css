@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.base {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(41, 41, 41, 0.7)), url('../images/LoveJoy studio.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    padding: 1% 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.icon {
+    width: 40px;
+    cursor: pointer;
+    padding-left: 17px;
+    display: absolute;
+}
+
+.navbar {
+    flex: 0.91;
+    text-align: right;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00ffe1;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+nav .mobile-icon {
+    display: none;
+    width: 30px;
+}
+
+/*---------------------------------------------------SLIDER--------------------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+    padding-top: 0.5%;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    padding-right: 19%;
+}
+
+.img-slides {
+    width: 840px;
+    height: 505px;
+    justify-self: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    position: relative;
+    bottom: 35px;
+    background-color: #fffbfb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+}
+
+.active {
+    background-color: #00fce3;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+@media(max-width: 700px) {
+    .base {
+        min-height: 45vh;
+    }
+
+    .navbar ul {
+        padding: 35px;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        background: rgb(24, 24, 24);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .logo {
+        padding-right: 160px;
+        padding-left: 2%;
+        width: 80px;
+        padding-bottom: 1%;
+        padding-top: 2%;
+    }
+
+    .icon {
+        display: none;
+        right: -100px;
+    }
+
+    nav .mobile-icon {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .slideshow-container {
+        max-width: 300px;
+        padding-top: 5%;
+        position: relative;
+        margin: auto;
+        padding-right: 1%;
+    }
+
+    .img-slides {
+        width: 300px;
+        height: 190px;
+        justify-self: center;
+    }
+
+    .numbertext {
+        padding: 30px 15px;
+    }
+
+    .dot {
+        height: 6px;
+        width: 6px;
+    }
+
+}
+
+/*------------------------------------------------Tour Dates------------------------------------------------*/
+
+.tourdates {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/lovejoy-ep3-cover.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 85vh;
+    width: 100%;
+}
+
+.tourdates h1 {
+    padding-bottom: 35px;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.tourdates h3 {
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: end;
+    padding-right: 2%;
+    padding-top: 2%;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.tourdates-col h5 {
+    color: rgb(202, 202, 202);
+    padding-top: 60px;
+}
+
+.row {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tourdates-col {
+    flex-basis: 31%;
+    background: rgba(249, 249, 249, 0.2);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.tourdates-col a {
+    text-decoration: none;
+}
+
+.tourdates-col h2 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.tourdates-col:hover {
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.7);
+}
+
+@media(max-width:700px) {
+    .tourdates {
+        padding-top: 70px;
+        min-height: 85vh;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .tourdates-col h2 {
+        color: white;
+        text-align: center;
+        font-weight: 200;
+        margin: 10px 0;
+    }
+
+    .tourdates-col {
+        margin-right: 8%;
+        margin-left: 8%;
+        margin-bottom: 15%;
+    }
+
+    .tourdates h3 {
+        padding-bottom: 5%;
+        padding-right: 3%;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}
+
+
+/*--------------------------------------------------------Store----------------------------------------------*/
+.row2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.store {
+    background-image: url('../images/LovejoyBackground.webp');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px
+}
+
+.store h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+
+.store-col {
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.store-col img {
+    width: 100%;
+    display: inline-block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer h4 {
+    text-align: center;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.layer:hover {
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 600;
+    color: black;
+    text-decoration: underline;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.store-btn {
+    padding-top: 5%;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    border-width: 3px;
+    padding: 15px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid rgb(65, 65, 65);
+    border-width: 3px;
+    background: black;
+    transition: 1s;
+}
+
+@media(max-width:700px) {
+    .store {
+        min-height: 120vh;
+    }
+
+    .store h1 {
+        padding-bottom: 11%;
+    }
+
+    .store-col img {
+        width: 50%;
+    }
+
+    .layer {
+        width: 100%;
+    }
+
+    .layer:hover {
+        background: none;
+    }
+
+    .layer h4 {
+        font-size: 11px;
+        font-weight: 600;
+        margin: 13px 0;
+    }
+
+    .layer h3 {
+        color: white;
+    }
+
+    .row2 {
+        flex-direction: column;
+    }
+
+    .store-btn {
+        padding-top: 10%;
+    }
+}
+
+/*--------------------------------------------------- New Sletter ---------------------------------------------*/
+.newsletter {
+    background: rgb(232, 188, 14);
+    margin: auto;
+    text-align: center;
+    min-height: 75vh;
+    padding-top: 25px;
+    width: 100%;
+}
+
+.newsletter h1 {
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 50px;
+}
+
+.newsletter p {
+    padding-top: 12px;
+    font-size: 16px;
+}
+
+form input {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f2f2f2;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background: rgb(234, 108, 11);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 20px;
+}
+
+@media(max-width:700px) {
+    .newsletter {
+        background: rgb(232, 188, 14);
+        margin: auto;
+        text-align: center;
+        min-height: 100vh;
+    }
+
+    .newsletter h1 {
+        padding-top: 5%;
+        color: black;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .newsletter p {
+        font-size: 14px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+}
+
+/*---------------------------------------------------------Social Media----------------------------------------*/
+.socialmedia {
+    background: rgb(0, 0, 0);
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    min-height: 47vh;
+    width: 100%;
+}
+
+.logo2 {
+    width: 150px;
+    cursor: pointer;
+}
+
+.barisan-icon {
+    padding-top: 5px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.icon2 {
+    width: 40px;
+    cursor: pointer;
+    display: absolute;
+}
+
+.barisan-icon ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 38px 20px;
+    position: relative;
+}
+
+.socialmedia h5 {
+    padding-top: 2.5%;
+    color: white;
+
+}
+
+@media(max-width:700px) {
+    .logo2 {
+        width: 110px;
+    }
+
+    .barisan-icon ul li {
+        padding: 19px 10px;
+    }
+
+    .icon2 {
+        width: 35px;
+    }
+
+    .socialmedia h5 {
+        padding-top: 16%;
+    }
+}

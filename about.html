@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovejoy Band about</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------------------HOME----------------------------------------------------------->
+    <section class="base">
+        <!----------------------- Navbar ---------------------->
+        <header>
+            <a href="index.html"><img src="images/logo.png" class="logo"> </a>
+            <nav>
+                <div class="navbar" id="navLinks">
+                    <img src="images/silang.png" class="mobile-icon" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="music.html">MUSIC</a></li>
+                        <li><a href="store-official.html">STORE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                    </ul>
+                </div>
+                <img src="images/bars.png" class="mobile-icon" onclick="showMenu()">
+            </nav>
+            <div>
+                <a href="https://www.instagram.com/lovejoyonline/"><img src="images/icon-ig.png" class="icon"> </a>
+                <a href="https://twitter.com/lovejoy"><img src="images/twitter_PNG3.png" class="icon"> </a>
+            </div>
+        </header>
+
+        <!----------------------------------Wallpaper----------------------------------------------------------->
+
+        <div class="wallpaper-images">
+            <img src="images/lovejoy-swag1.jpg" class="img-wall">
+            <img src="images/swag2.jpg" class="img-wall">
+        </div>
+
+    </section>
+
+    <!---------------------------------------------IDENTITY------------------------------------------------->
+    <section class="members">
+        <h1>Members</h1>
+
+        <div class="row">
+            <div class="indetity">
+                <img src="images/William Gold.jpg">
+                <h4>William Gold</h4>
+                <p>(Lead Vocalist & Rhythm Guitarist)</p>
+            </div>
+            <div class="indetity">
+                <img src="images/Mark Boardman.jpg">
+                <h4>Mark Boardman</h4>
+                <p>(Drummer)</p>
+            </div>
+            <div class="indetity">
+                <img src="images/Joe Goldsmith.jpg">
+                <h4>Joe Goldsmith</h4>
+                <p>(Lead Guitarist)</p>
+            </div>
+            <div class="indetity">
+                <img src="images/ash kabosu.jpg">
+                <h4>Ash Kabosu</h4>
+                <p>(Bassist)</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!------------------------------------------------BIOGRAPHY--------------------------------------------->
+    <section class="biographie">
+        <div class="container-bio">
+            <h1>BIOGRAPHIES</h1>
+            <p>Lovejoy are an indie rock band formed in Brighton, England. The band consists of William Gold (better
+                known
+                as Wilbur Soot) as lead vocalist and rhythm guitarist, Joe Goldsmith as lead guitarist, Mark Boardman as
+                drummer, and Ash Kabosu as bassist, with all four also sharing in songwriting.[4] Their debut EP, Are
+                You
+                Alright?, was released on 8 May 2021. Their second EP, Pebble Brain, came out on 14 October 2021. The
+                band's
+                third EP, Wake Up & It's Over, was released on 12 May 2023.
+            </p>
+            <p>The band independently release their music under their own label, Anvil Cat Records, distributing with
+                AWAL.
+            </p>
+        </div>
+    </section>
+
+    <!------------------------------------------LOVE JOY SOCIAL MEDIA------------------------------------------->
+    <section class="socialmedia">
+        <a href="index.html"><img src="images/logo.png" class="logo2"> </a>
+
+        <div class="barisan-icon">
+            <ul>
+                <li> <a href="https://lovejoy.ffm.to/discord"><img src="images/dc.png" class="icon2"> </a> </li>
+                <li> <a href="https://twitter.com/lovejoy"><img src="images/icon-twt.png" class="icon2"> </a> </li>
+                <li> <a href="https://www.instagram.com/lovejoyonline/"><img src="images/icon-ig.png" class="icon2">
+                    </a>
+                </li>
+                <li> <a href="https://open.spotify.com/artist/33tFkBLsl6f8TjKkV0uF0C?si=LrKRa-pBSpGPnTqbcrzZTg"><img
+                            src="images/icon-spotify.png" class="icon2"> </a> </li>
+                <li> <a href="https://www.youtube.com/@Lovejoyonline"><img src="images/icon-yt.png" class="icon2"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <h5>© Lovejoy 2023 </h5>
+
+    </section>
+
+    <!---------------------------------------- JavaScvript untuk Menu ------------------------------------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

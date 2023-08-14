@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovejoy Band about</title>
+    <link rel="stylesheet" href="styles/ticket.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <a href="index.html">
+                <h3>PURCHASE TICKET</h3>
+            </a>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="phone" placeholder="Phone No." required>
+            <input type="text" id="country" placeholder="Your Country" required>
+            <input type="text" id="city" placeholder="Your City" required>
+            <select id="payment">
+                <option value="payment">Payment Time</option>
+                <option value="paypal">Paypal</option>
+                <option value="amazonpay">Amazon Pay</option>
+                <option value="dana">Dana</option>
+            </select>
+            <button type="submit">Purchase</button>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "ahmadhayyun553@gmail.com",
+                Password: "F4327912FBED636EE60D8E38443032D55F03",
+                To: 'ahmadhayyunaji12@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact from Purchase Merch",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone No.: " + document.getElementById("phone").value
+                    + "<br> Country: " + document.getElementById("country").value
+                    + "<br> City: " + document.getElementById("city").value
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+</body>
+
+</html>

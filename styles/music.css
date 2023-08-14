@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.base {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(19, 19, 19, 0.7), rgba(19, 19, 19, 0.7)), url('../images/LoveJoy studio.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    padding: 1% 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.icon {
+    width: 40px;
+    cursor: pointer;
+    padding-left: 17px;
+    display: absolute;
+}
+
+.navbar {
+    flex: 0.91;
+    text-align: right;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00ffe1;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+nav .mobile-icon {
+    display: none;
+    width: 30px;
+}
+
+/*---------------------------------------------------WALLPAPER--------------------------------------------------*/
+/* Slideshow container */
+.page-info {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    min-height: 60vh;
+    width: 100%;
+}
+
+.page-info h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.info {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.info2 {
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+.info-col {
+    flex-basis: 31%;
+    background: rgba(249, 249, 249, 0.2);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.info-col img {
+    margin: 8px;
+    padding: 1% 1%;
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    display: absolute;
+}
+
+.info-col img:hover {
+    box-shadow: 0 0 10px 0px black;
+}
+
+@media(max-width: 700px) {
+    .base {
+        min-height: 140vh;
+    }
+
+    .navbar ul {
+        padding: 35px;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        background: rgb(24, 24, 24);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .logo {
+        padding-right: 160px;
+        padding-left: 2%;
+        width: 80px;
+        padding-bottom: 1%;
+        padding-top: 2%;
+    }
+
+    .icon {
+        display: none;
+        right: -100px;
+    }
+
+    nav .mobile-icon {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .page-info h1 {
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    .info {
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .info2 {
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .img-news {
+        width: 285px;
+        height: 250px;
+    }
+
+    .info-col img {
+        margin: 8px;
+        width: 160px;
+        height: 160px;
+        padding-right: 5%;
+        cursor: pointer;
+        display: absolute;
+    }
+
+    .info-col img:hover {
+        box-shadow: 0 0 10px 0px black;
+    }
+
+    .info-col {
+        text-align: center;
+        width: 285px;
+        height: 360px;
+        background: rgba(249, 249, 249, 0.2);
+        padding: 50px 50px;
+        box-sizing: border-box;
+    }
+}
+
+/*--------------------------------------------------- Members -------------------------------------------------*/
+.tourdate {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(41, 41, 41, 0.7)), url('../images/LovejoyBackground.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    min-height: 170vh;
+    width: 100%;
+}
+
+.img-tour {
+    padding: 20px;
+    width: 130px;
+}
+
+.tourdate h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.row {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 {
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row3 {
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tourdates-col {
+    flex-basis: 31%;
+    background: rgba(249, 249, 249, 0.2);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.btn-tick {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-tick:hover {
+    box-shadow: 0 0 10px 0px black;
+}
+
+.tourdates-col a {
+    text-decoration: none;
+}
+
+.tourdates-col p {
+    color: white;
+}
+
+.tourdates-col h5 {
+    color: rgb(202, 202, 202);
+    padding-top: 60px;
+}
+
+.tourdates-col h2 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.tourdates-col:hover {
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.7);
+}
+
+@media(max-width:700px) {
+
+    .img-tour {
+        padding: 20px;
+        width: 100px;
+    }
+
+    .tourdate h1 {
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+    .row2 {
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-direction: column;
+    }
+
+    .row3 {
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-direction: column;
+    }
+
+    .row {
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-direction: column;
+    }
+
+}
+
+/*---------------------------------------------------------Social Media----------------------------------------*/
+.socialmedia {
+    background: rgb(0, 0, 0);
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    min-height: 55vh;
+    width: 100%;
+}
+
+.logo2 {
+    width: 150px;
+    cursor: pointer;
+}
+
+.barisan-icon {
+    padding-top: 5px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.icon2 {
+    width: 40px;
+    cursor: pointer;
+    display: absolute;
+}
+
+.barisan-icon ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 38px 20px;
+    position: relative;
+}
+
+.socialmedia h5 {
+    padding-top: 7%;
+    color: white;
+
+}
+
+@media(max-width:700px) {
+    .socialmedia {
+        min-height: 40vh;
+    }
+
+    .logo2 {
+        width: 110px;
+    }
+
+    .icon2 {
+        width: 35px;
+    }
+
+    .barisan-icon ul li {
+        padding: 19px 10px;
+    }
+
+    .socialmedia h5 {
+        padding-top: 8%;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovejoy Band about</title>
+    <link rel="stylesheet" href="styles/music.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------------------HOME----------------------------------------------------------->
+    <section class="base">
+        <!----------------------- Navbar ---------------------->
+        <header>
+            <a href="index.html"><img src="images/logo.png" class="logo"> </a>
+            <nav>
+                <div class="navbar" id="navLinks">
+                    <img src="images/silang.png" class="mobile-icon" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="music.html">MUSIC</a></li>
+                        <li><a href="store-official.html">STORE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                    </ul>
+                </div>
+                <img src="images/bars.png" class="mobile-icon" onclick="showMenu()">
+            </nav>
+            <div>
+                <a href="https://www.instagram.com/lovejoyonline/"><img src="images/icon-ig.png" class="icon"> </a>
+                <a href="https://twitter.com/lovejoy"><img src="images/twitter_PNG3.png" class="icon"> </a>
+            </div>
+        </header>
+
+        <!----------------------------------Wallpaper----------------------------------------------------------->
+        <section class="page-info">
+            <h1>Listen All the Songs from Spotify <br> (Just Pick)</h1>
+            <div class="info">
+                <div class="info-col">
+                    <a href="https://open.spotify.com/album/43yKUvEVZ2dTy2vOrozS2j?si=fgUMF1MARwWvVJ92IFwdfA"><img
+                            src="images/ep-1.jpeg"> </a>
+                </div>
+                <div class="info-col">
+                    <a href="https://open.spotify.com/album/5LHuQr88XpvvuGpqgsu2gr?si=Czl_95FVSRegoJapezbb-Q"><img
+                            src="images/ep-2.jpeg"> </a>
+                </div>
+                <div class="info-col">
+                    <a href="https://open.spotify.com/album/5nlhLmWKBfIzkCxwVRAFd2?si=mpNiFOs6T8Whf7QpTJ2-HA"><img
+                            src="images/ep.jpeg"> </a>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="info-col">
+                    <a href="https://open.spotify.com/album/6pTPviSRgaaaGzxGiuna5O?si=CGT6N9WOSqC1B-f9Urautw"><img
+                            src="images/single1.jpeg"> </a>
+                </div>
+                <div class="info-col">
+                    <a href="https://open.spotify.com/album/0hTfLMecWyjNUaxmk2OSuc?si=KGk0v3zMRcS_qt-t7zbLiQ"><img
+                            src="images/single2.jpeg"> </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!------------------------------------------LOVE JOY SOCIAL MEDIA------------------------------------------->
+    <section class="socialmedia">
+        <a href="index.html"><img src="images/logo.png" class="logo2"> </a>
+
+        <div class="barisan-icon">
+            <ul>
+                <li> <a href="https://lovejoy.ffm.to/discord"><img src="images/dc.png" class="icon2"> </a> </li>
+                <li> <a href="https://twitter.com/lovejoy"><img src="images/icon-twt.png" class="icon2"> </a> </li>
+                <li> <a href="https://www.instagram.com/lovejoyonline/"><img src="images/icon-ig.png" class="icon2">
+                    </a>
+                </li>
+                <li> <a href="https://open.spotify.com/artist/33tFkBLsl6f8TjKkV0uF0C?si=LrKRa-pBSpGPnTqbcrzZTg"><img
+                            src="images/icon-spotify.png" class="icon2"> </a> </li>
+                <li> <a href="https://www.youtube.com/@Lovejoyonline"><img src="images/icon-yt.png" class="icon2"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <h5>© Lovejoy 2023 </h5>
+
+    </section>
+
+    <!---------------------------------------- JavaScvript untuk Menu ------------------------------------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
